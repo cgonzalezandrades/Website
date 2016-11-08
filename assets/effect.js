@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
     $('.type-writer').typeIt({
-        strings: 'Love Webss Development',
+        strings:'Love Web Development !',
         speed: 50,
         autoStart:true
 
