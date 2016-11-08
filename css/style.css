@@ -1,0 +1,38 @@
+body{
+}
+
+.color-area{
+    background-color: white;
+}
+
+.type-writer{
+  text-align: center;
+  font-size: 2em;
+    color: #0b908f;
+}
+
+
+.navbar-text h4{
+  color: white;
+  text-decoration: none;
+
+}
+
+/*.nav-area:hover{*/
+  /*background-color: beige;*/
+/*}*/
+ a:hover{
+  text-decoration: none;
+     margin: 0;
+     padding: 15px;
+     background-color: rgb(54,54,54);
+}
+
+.top-content{
+  background-color:whitesmoke;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer {
+    background-color: #f8f8f8;
+}
