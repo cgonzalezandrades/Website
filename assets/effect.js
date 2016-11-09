@@ -1,6 +1,7 @@
 var time = moment().format('h:mm:ss A');
 var timeOfDay = parseInt(moment().format('H'));
 
+
 console.log(time);
 console.log(timeOfDay);
 
