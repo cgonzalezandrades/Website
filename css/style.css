@@ -44,7 +44,7 @@ body {}
 }
 
 .intro-banner {
-  background-color: ghostwhite;
+  background-color: lightskyblue;
   padding-top: 100px;
   padding-bottom: 100px
 }
@@ -63,6 +63,15 @@ body {}
 #images .img-responsive {
   max-width: calc(30%/10);
   display: inline-block;
+}
+
+.panel-heading .img-responsive{
+  display: inline-block;
+  max-width: calc(100%/8);
+}
+
+#panel-images{
+  background-color: white;
 }
 
 .footer-logos .img-responsive {
@@ -104,6 +113,7 @@ a:hover {
 .projects-area{
   font-family: 'Mandali', sans-serif;
   font-size: 2em;
+  background-color: lightgreen;
 }
 
 #project-area-title{

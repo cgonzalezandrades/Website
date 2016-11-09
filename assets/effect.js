@@ -44,7 +44,7 @@ $(document).ready(function () {
 
   }
   
-  if (timeOfDay >= 19) {
+  if (timeOfDay >= 19 || timeOfDay < 6) {
     console.log('sds');
     $('.top-content').css('background-image', 'url(' + "./assets/img/night.jpg" + ')');
 
