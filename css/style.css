@@ -1,39 +1,86 @@
-body {}
-.color-area {
-  background-color: black;
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
+
+
+body {}
 
 .type-writer {
   text-align: center;
   font-size: 2em;
+  color: black;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: grey;
+}
+
+.navbar-default .navbar-brand {
   color: white;
 }
 
-#navigation {}
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: grey;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
 
 #images {
   padding: 20px;
   text-align: center;
 }
 
-.footer-logos{
-  text-align: center;
-  margin-top: 10px;
+.intro .img-responsive {
+  max-width: calc(40%);
+  float: left;
+  filter: grayscale(100%)
 }
 
-.img-responsive {
-  
-  max-width: calc(60%/10);
+.intro-banner {
+  background-color: ghostwhite;
+  padding-top: 100px;
+  padding-bottom: 100px
+}
+
+.profile-picture {
+  /*  margin-left: 90px;*/
+}
+
+.type-writer2 {
+  display: block;
+  padding-top: 30px;
+  font-family: 'VT323', monospace;
+  font-size: 2em;
+}
+
+#images .img-responsive {
+  max-width: calc(30%/10);
   display: inline-block;
-
 }
 
-.footer-logos .img-responsive{
+.footer-logos .img-responsive {
   max-width: calc(40%/10);
   display: inline-block;
 }
 
+.footer-logos {
+  text-align: center;
+  margin-top: 10px;
+}
 
+.time {
+  font-family: 'Mandali', sans-serif;
+  font-size: 5em;
+  text-align: center;
+  color: white;
+}
 
 img {
   padding: 5px;
@@ -42,30 +89,78 @@ img {
 a:hover {
   text-decoration: none;
   margin: 0;
-  padding: 15px;
-  background-color: rgb(54, 54, 54);
+/*  padding: 15px;*/*/
+/*  background-color: rgb(54, 54, 54);*/
 }
 
 .top-content {
   margin-top: 50px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: crimson;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects-area{
+  font-family: 'Mandali', sans-serif;
+  font-size: 2em;
+}
+
+#project-area-title{
+  text-align: center;
+}
+
+#panel-title{
+  text-align: center;
+}
+
+.col-xs-offset-1{
+/*margin-left: 180px;  */
 }
 
 .footer {
-  background-color: #f8f8f8;
+  background-color: black;
+  /*  margin-top: 15%;*/
 }
 
 .nav>li>a {
   text-align: center;
 }
 
-
-/*
-@media (min-width 768px){
-  
-  
-  
+#text {
+  font-family: 'Mandali', sans-serif;
+  font-size: 2em;
 }
+
+@media screen and (max-width: 768px) {
+  .type-writer2 {
+    display: none;
+    /*
+    padding-top: 0;
+    background-color: aqua;
 */
+  }
+  #text {
+    font-size: .7em;
+  }
+  .time {
+    font-size: 2em;
+  }
+  .top-content {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+
+@media screen and(min-width:480px) {
+  #text {
+    font-size: em;
+  }
+   .top-content {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+}
