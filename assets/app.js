@@ -12,6 +12,22 @@ console.log(timeOfDay);
 
 $(document).ready(function () {
 
+  // Empty input and text area when modal close
+  $(".modal").on("hidden.bs.modal", function () {
+    $("#name-area").val('');
+  });
+
+  $(".modal").on("hidden.bs.modal", function () {
+    $("#email-area").val('');
+  });
+
+  $(".modal").on("hidden.bs.modal", function () {
+    $("#note-area").val('');
+  });
+  //------------------------------------------
+
+
+
   $('.type-writer2').typeIt({
     strings: '<strong>Hola !</strong>',
     speed: 50,
@@ -23,12 +39,7 @@ $(document).ready(function () {
   var $timeDisplay = $('<div/>').addClass('time').html(time);
   $('.top-banner').html($timeDisplay);
 
-  
-  
-//   if (timeOfDay >= 19 && timeOfDay < 6) {
-//    $('.top-content').css('background-image', 'url(' + "./assets/img/morning.jpg" + ')');
-//
-//  }
+
 
   if (timeOfDay >= 6 && timeOfDay < 12) {
     $('.top-content').css('background-image', 'url(' + "./assets/img/morning.jpg" + ')');
@@ -44,10 +55,12 @@ $(document).ready(function () {
     $('.top-content').css('background-image', 'url(' + "./assets/img/dusk.jpg" + ')');
 
   }
-  
+
   if (timeOfDay >= 19 || timeOfDay < 6) {
     console.log('sds');
     $('.top-content').css('background-image', 'url(' + "./assets/img/night.jpg" + ')');
+    
+    $('.top-content').css('background-attachment', 'fixed');
 
   }
 
@@ -64,12 +77,3 @@ $(document).ready(function () {
   }, 1000)
 
 });
-
-
-
-
-
-//  var $timeDisplay = $('<div/>').addClass('time').html(time);
-//  $('.top-banner').append($timeDisplay);
-
-//})

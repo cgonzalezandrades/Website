@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,25 +10,13 @@
 
   <title>Carlos Gonzalez</title>
 
+  <!-- Reset Style from Browser -->
   <link href="css/reset.css" rel="stylesheet">
 
-  <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
 
-
-
-
-  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
-
-
-  <script src="assets/app.js" type="text/javascript"></script>
   <!-- Bootstrap Core CSS -->
 
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
 
   <!-- Custom CSS -->
   <link href="./css/style.css" rel="stylesheet">
@@ -37,12 +24,11 @@
 
   <!--Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Mandali|VT323" rel="stylesheet">
-
 </head>
 
 <body>
 
-
+  <!--Navigation -->
   <nav class="navbar navbar-default navbar-fixed-top topnav navbar-inverse" id="navigation" role="navigation">
     <div class="container topnav">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -53,14 +39,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        
+
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <h3><a href="#contact">Contact</a></h3></li>
+            <h3><a href="#contact" data-toggle="modal" data-target="#myModal" >contact</a></h3></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -68,20 +54,17 @@
     <!-- /.container -->
   </nav>
 
-
-  <!--  <div class="container">-->
-
+  <!--Top content with moment js watch>-->
   <div class="row top-content">
     <div class="col-xs-12 top-banner">
-    
+
     </div>
   </div>
 
+  <!-- First banner (introduction) -->
   <div class="row">
-
+    
     <div class="col-sx-12 intro-banner">
-
-
       <div class="row">
         <div class="col-xs-3 col-xs-offset-5 intro">
           <img src="assets/img/profilePicture.jpg" class="img-responsive img-circle profile-picture"></img>
@@ -89,21 +72,67 @@
         </div>
       </div>
 
-
       <div class="row">
         <div class="col-xs-4 col-xs-offset-4 intro">
-          <p id="text"> I'm a bilingual web developer interested in keep learning intuitive and responsive web design.
+          <p id="intro-text"> I'm a bilingual web developer interested in keep learning intuitive and responsive web design.
           </p>
         </div>
       </div>
     </div>
   </div>
+<!--END First banner (introduction)-->
 
-    <div class="row projects-area">
+  <!-- Projects Banner  -->
+  <div class="row projects-area">
 
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="row">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          
+          <!--Modal Header-->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Contact Me </h4>
+          </div>
+
+          <!--Modal Body-->
+          <div class="modal-body">
+            <form action="mailto:carlos.gonzalez.andrades@gmail.com" method="post" enctype="text/plain" class="form-group">
+
+              <label for="usr">Name:</label>
+              <input type="textarea" class="form-control" id="name-area">
+
+              <label for="usr">Email:</label>
+              <input type="text" class="form-control" id="email-area">
+
+              <label for="usr">Notes:</label>
+              <textarea rows="5" class="form-control" id="note-area"></textarea>
+
+              <div class="modal-footer">
+
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                <input type="button" value="send" class="btn btn-primary"></input>
+
+              </div>
+            </form>
+          </div>
+          <!--End of Modal Body-->
+        </div>
+      </div>
     </div>
+  </div>
+  <!--End of Modal-->
 
 
+  <!--Banner with Languages-->
   <div class="row">
     <div id="images" class="col-xs-12">
       <link href=""><img class="img-responsive" src="assets/img/boostrap.png" alt="bootstrapImage"></link>
@@ -116,29 +145,40 @@
       <img class="img-responsive" src="assets/img/node.png">
       <img class="img-responsive" src="assets/img/Npm.png">
       <img class="img-responsive" src="assets/img/react.png">
-
     </div>
-
   </div>
+  <!--End-->
 
 
 
 
+  <!--footer-->
   <div class="row footer" id="contact">
-
     <div class="container">
       <div class="col-lg-12 footer-logos">
         <a href="https://www.linkedin.com/in/carlos-gonzalez-b6ab35a6"><img class="img-responsive" src="assets/img/github.png"></a>
         <a href="https://github.com/cgonzalezandrades"><img class="img-responsive" src="assets/img/Linkedin.png"></a>
-
-
-
       </div>
       <p class="copyright text-muted small">Copyright &copy; Carlos Gonzalez 2016</p>
     </div>
   </div>
-
+  <!--End-->
 
 </body>
+
+<!--Jquery Library-->
+<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+
+<!--Moment.js Library-->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+<!--typeit Library-->
+<script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
+
+<!--app file reference-->
+<script src="assets/app.js" type="text/javascript"></script>
+
+<!--Bootstrap Javascript Library-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </html>
